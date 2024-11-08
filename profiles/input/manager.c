@@ -66,9 +66,6 @@ static struct btd_profile input_profile = {
 
 	.device_probe	= input_device_register,
 	.device_remove	= input_device_unregister,
-
-	.adapter_probe	= hid_server_probe,
-	.adapter_remove = hid_server_remove,
 };
 
 void input_manager_device_connected(struct btd_device *dev, int err)
