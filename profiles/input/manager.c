@@ -52,9 +52,6 @@ static struct btd_profile input_profile = {
 
 	.device_probe	= input_device_register,
 	.device_remove	= input_device_unregister,
-
-	.adapter_probe	= hid_server_probe,
-	.adapter_remove = hid_server_remove,
 };
 
 static GKeyFile *load_config_file(const char *file)
